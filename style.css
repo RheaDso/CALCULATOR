@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+
+header{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+footer{
+    text-align: center;
+    padding-top: 80px;
+}
+
+html{
+    min-height: 100%;
+}
+
+body{
+    background-image: Linear-gradient(to left,#90EE90, #20B2AA,#6495ED,#9370DB);;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    background: rgba(0,0,0,0.3);
+    
+    padding:20px;
+    color: #EEE;
+    border-radius: 5px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.display{
+    text-align: right;
+}
+
+.button{
+    grid-gap: 15px;   
+}
+
+.button{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    border-radius: 10%;
+    text-align: center;
+}
+
+.equal,
+.clear{
+    background-color: yellow;
+    border: none;
+}
+
+.container,
+button{
+    font-family: "Space Mono";
+    border-radius: 7px;
+    border: none;
+}
+
+.calculator{
+    background-image:-moz-linear-gradient();
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-areas: 
+    "seven eight nine equal"
+    "four five six equal"
+    "one two three equal"
+    "zero decimal clear equal";
+}
+.one{
+    grid-area: one;
+}
+
+.two{
+    grid-area: two;
+}
+
+.three{
+    grid-area: three;
+}
+
+.four{
+    grid-area: four;
+}
+
+.five{
+    grid-area: five;
+}
+
+.six{
+    grid-area: six;
+}
+
+.seven{
+    grid-area: seven;
+}
+.eight{
+    grid-area: eight;
+}
+.nine{
+    grid-area: nine;
+}
+.zero{
+    grid-area: zero;
+}
+.equal{
+    grid-area: equal;
+}
+.decimal{
+    grid-area: decimal;
+}
+.clear{
+    grid-area: clear;
+}
+.plus{
+    grid-area: plus;
+}
+.minus{
+    grid-area: minus;
+}
+.multiply{
+    grid-area: multiply;
+}
+.divide{
+    grid-area: divide;
+}
+
+button:hover{
+    background: rgb(143, 248, 220);
+}
+
