@@ -1,78 +1,65 @@
 @import url('https://fonts.googleapis.com/css?family=Space+Mono');
 
-header{
-    text-align: center;
-    padding-bottom: 50px;
-}
-
-footer{
-    text-align: center;
-    padding-top: 80px;
-}
-
 html{
     min-height: 100%;
 }
 
 body{
-    background-image: Linear-gradient(to left,#90EE90, #20B2AA,#6495ED,#9370DB);;
+    background-image: Linear-gradient(to left,#90EE90, #20B2AA,#6495ED,#9370DB);
+}
+
+header{
+    text-align: center;
+    padding-bottom: 50px;
+    font-family: "Helvetica";
 }
 
 .container{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-content: center;
 }
 
-.button{
-    background: rgba(0,0,0,0.3);
-    
-    padding:20px;
-    color: #EEE;
-    border-radius: 5px;
-    font-size: 22px;
-    cursor: pointer;
+.calculator{
+    width: 300px;
 }
 
 .display{
     text-align: right;
 }
 
-.button{
-    grid-gap: 15px;   
-}
-
-.button{
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    border-radius: 10%;
-    text-align: center;
-}
-
-.equal,
-.clear{
-    background-color: yellow;
-    border: none;
-}
-
-.container,
 button{
-    font-family: "Space Mono";
-    border-radius: 7px;
+    background-color: white(252, 252, 252, 0.3);
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
     border: none;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 2px;
 }
 
-.calculator{
+button:hover{
+    background: rgb(143, 248, 220);
+}
+
+footer{
+    text-align: center;
+    padding-top: 80px;
+    font-family: "Helvetica";
+}
+
+.btn{
     background-image:-moz-linear-gradient();
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(5, auto);
     grid-template-areas: 
-    "seven eight nine equal"
-    "four five six equal"
-    "one two three equal"
-    "zero decimal clear equal";
+    "seven eight nine multiply decimal"
+    "four five six divide equal"
+    "one two three minus equal"
+    "zero zero zero plus clear";
 }
+
 .one{
     grid-area: one;
 }
@@ -108,9 +95,11 @@ button{
 }
 .zero{
     grid-area: zero;
+    width: auto;
 }
 .equal{
     grid-area: equal;
+    height: auto;
 }
 .decimal{
     grid-area: decimal;
@@ -131,7 +120,8 @@ button{
     grid-area: divide;
 }
 
-button:hover{
-    background: rgb(143, 248, 220);
+.equal,
+.clear{
+    background-color: rgb(166, 255, 65);
+    border: none;
 }
-
