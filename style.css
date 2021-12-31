@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+
+html{
+    min-height: 100%;
+}
+
+body{
+    background-image: Linear-gradient(to left,#90EE90, #20B2AA,#6495ED,#9370DB);
+}
+
+header{
+    text-align: center;
+    padding-bottom: 50px;
+    font-family: "Helvetica";
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.calculator{
+    width: 300px;
+}
+
+.display{
+    text-align: right;
+}
+
+button{
+    background-color: white(252, 252, 252, 0.3);
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 2px;
+}
+
+button:hover{
+    background: rgb(143, 248, 220);
+}
+
+footer{
+    text-align: center;
+    padding-top: 80px;
+    font-family: "Helvetica";
+}
+
+.btn{
+    background-image:-moz-linear-gradient();
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-areas: 
+    "seven eight nine multiply decimal"
+    "four five six divide equal"
+    "one two three minus equal"
+    "zero zero zero plus clear";
+}
+
+.one{
+    grid-area: one;
+}
+
+.two{
+    grid-area: two;
+}
+
+.three{
+    grid-area: three;
+}
+
+.four{
+    grid-area: four;
+}
+
+.five{
+    grid-area: five;
+}
+
+.six{
+    grid-area: six;
+}
+
+.seven{
+    grid-area: seven;
+}
+.eight{
+    grid-area: eight;
+}
+.nine{
+    grid-area: nine;
+}
+.zero{
+    grid-area: zero;
+    width: auto;
+}
+.equal{
+    grid-area: equal;
+    height: auto;
+}
+.decimal{
+    grid-area: decimal;
+}
+.clear{
+    grid-area: clear;
+}
+.plus{
+    grid-area: plus;
+}
+.minus{
+    grid-area: minus;
+}
+.multiply{
+    grid-area: multiply;
+}
+.divide{
+    grid-area: divide;
+}
+
+.equal,
+.clear{
+    background-color: rgb(166, 255, 65);
+    border: none;
+}
