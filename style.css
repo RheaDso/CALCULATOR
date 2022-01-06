@@ -3,31 +3,35 @@
 html{
     min-height: 100%;
 }
-
 body{
-    background-image: Linear-gradient(to left,#90EE90, #20B2AA,#6495ED,#9370DB);
+    background-image: Linear-gradient(to left,#90EE90, #20B2AA,#6495ED,#8c5bf0, rgb(236, 100, 191));
 }
-
 header{
+    display: flex;
+    justify-content: center;
     text-align: center;
-    padding-bottom: 50px;
-    font-family: "Helvetica";
+    padding-top: 10px;
+    padding-bottom: 40px;
+    font-family: "Times New Roman";
+    font-size: x-large;
+    
 }
-
 .container{
     display: flex;
+    padding-top: 60px;
     justify-content: center;
     align-content: center;
 }
-
 .calculator{
     width: 300px;
 }
-
 .display{
+    font-size: 30px;
     text-align: right;
+    background-color: #00000028;
+    border-radius: 10px;
+    padding-right: 10px;
 }
-
 button{
     background-color: white(252, 252, 252, 0.3);
     height: 50px;
@@ -38,52 +42,44 @@ button{
     cursor: pointer;
     margin: 2px;
 }
-
 button:hover{
     background: rgb(143, 248, 220);
 }
-
 footer{
     text-align: center;
-    padding-top: 80px;
-    font-family: "Helvetica";
+    padding-top: 120px;
+    font-family: "Brush script mt";
+    font-size: x-large;
 }
-
 .btn{
     background-image:-moz-linear-gradient();
     display: grid;
     grid-template-columns: repeat(5, auto);
     grid-template-areas: 
-    "seven eight nine multiply decimal"
-    "four five six divide equal"
-    "one two three minus equal"
-    "zero zero zero plus clear";
+    "seven eight nine plus clear"
+    "four five six minus equal"
+    "one two three multiply equal"
+    "zero zero zero divide decimal";
+    
 }
-
 .one{
     grid-area: one;
 }
-
 .two{
     grid-area: two;
 }
-
 .three{
     grid-area: three;
 }
-
 .four{
     grid-area: four;
 }
-
 .five{
     grid-area: five;
 }
-
 .six{
     grid-area: six;
 }
-
 .seven{
     grid-area: seven;
 }
@@ -119,9 +115,9 @@ footer{
 .divide{
     grid-area: divide;
 }
-
 .equal,
 .clear{
-    background-color: rgb(166, 255, 65);
+ 
+    background-color: rgb(210, 255, 86);
     border: none;
 }
