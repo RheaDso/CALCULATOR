@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
 html{
     min-height: 100%;
@@ -86,7 +86,8 @@ button:hover{
 footer{
     text-align: center;
     padding-top: 80px;
-    font-family: "Helvetica";
+    font-family: "Poppins";
+    font-size: medium;
 }
 
 .btn{
