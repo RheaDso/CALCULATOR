@@ -14,13 +14,13 @@ header{
     padding-bottom: 40px;
     font-family: "Times New Roman";
     font-size: x-large;
-    
 }
 .container{
     display: flex;
     padding-top: 60px;
     justify-content: center;
     align-content: center;
+    display: grid;
 }
 .calculator{
     width: 300px;
